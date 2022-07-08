@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+/* everyone will download roboto when they visit  your website. */
+
 * {
-    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+/* 
+
+nav 
+
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.nav__link--anchor {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+
+.fa-circle-half-stroke {
+    font-size: 20px;
+}
+
+    /* 
+    
+    landing page and header
+    
+    */
+    
+    .landing__figure {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .landing__image--logo {
+        width: 100%;
+    }
+    
+    #landing-page {
+        height: 100vh;
+    }
+    /* we dont want them to reach the next page yet! */
+    
+    section {
+        background-color: rgb(245, 245, 245);
+    }
+
+    header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
