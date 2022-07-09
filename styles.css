@@ -230,6 +230,35 @@ header {
     }
 }
 
+/* modal section */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    box-shadow: 0 20px 60px 0 rgba(0,0,0,0.55);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.modal__half {
+    width: 50%;
+}
+
+.modal__aboutme {
+    background-color: rgb(245, 245, 245);
+}
+
+.modal__contact {
+    background-color: #242424;
+}
+
+
 /* projects section */
 
 .section__title {
