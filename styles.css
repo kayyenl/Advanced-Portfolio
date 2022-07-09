@@ -211,6 +211,7 @@ header {
 
 .project__image {
     width: 100%;
+    height: 100%;
 }
 
 .project__wrapper {
@@ -224,8 +225,17 @@ header {
 }
 
 .project__wrapper:hover .project__description {
+    transform: translate(-50%, -50%);
     opacity: 1;
-    transform: translateX(-50%);
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+    opacity: 0.7;
+}
+
+.project__wrapper:hover .project__image {
+    transform: scale(1.10);
+    filter: blur(5px);
 }
 
 .project__description {
@@ -233,10 +243,10 @@ header {
     color:  white;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-50%, 90%);
     max-width: 550px;
-    opacity: 1;
-    transition: opacity 300ms, transform 450ms ease;
+    opacity: 0;
+    transition: opacity 450ms, transform 300ms ease;
 }
 
 .project__wrapper--bg {
@@ -246,7 +256,8 @@ header {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0;
+    transition: opacity 450ms ease;
 }
 
 .project__description--title {
