@@ -32,6 +32,10 @@ p {
     transform: scale(0.7);
 }
 
+button {
+    cursor: pointer;
+}
+
 /* nav */
 
 nav {
@@ -132,4 +136,15 @@ header {
     border-radius: 9999px;
 }
 
-.header
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 9999px;
+    border: none;
+    color: white;
+    font-size: 32px;
+    background-color: rgb(56, 137, 57);
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
