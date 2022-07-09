@@ -278,9 +278,44 @@ header {
 .project__description--link {
     font-size: 20px;
     color: white;
+    text-decoration: none;
+    margin-right: 12px;
 }
 
 .project__img--needbg {
     background: url(backdrop.webp);
     transform: scale(1.03);
 }
+
+/* footer */
+
+footer {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    padding: 6% 0px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__figure {
+    width: 90px;
+    height: 90px;
+}
+
+.footer__image {
+    width: 100%;
+}
+
+.footer__social--link,
+.footer__copyright {
+    color: white;
+    text-decoration: none;
+}
+
+
