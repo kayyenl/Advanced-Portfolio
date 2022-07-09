@@ -45,7 +45,7 @@ nav {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    height: 100px;
+    height: 120px;
     padding: 0 20px;
 }
 
@@ -72,8 +72,8 @@ nav {
 /*  landing page and header */
 
 .landing__figure {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
 
 .landing__image--logo {
@@ -98,7 +98,7 @@ header {
 }
 
 .title {
-    font-size: 120px;
+    font-size: 102px;
     margin-bottom: 12px;
     line-height: 1;
     text-align: left;
@@ -148,3 +148,42 @@ header {
     bottom: 40px;
     right: 40px;
 }
+
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    color:rgb(56, 137, 57);
+    border: 3px solid rgb(56, 137, 57);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll__icon:after {
+    content: "";
+    width: 4px;
+    height: 6px;
+    background-color: rgb(56, 137, 57);
+    border-radius: 9999px;
+    animation: scroll_anim 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll_anim {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+/* projects section */
