@@ -80,6 +80,43 @@ li {
     width: 100%;
 }
 
+.HTML__orange {
+    color:rgb(173, 81, 11)
+}
+
+.CSS__blue {
+    color:rgb(58, 58, 176)
+}
+
+.JS__yellow {
+    color:#d5c000
+}
+
+.react__lightblue {
+    color: rgb(6, 92, 120)
+}
+
+.java__darkred {
+    color:rgb(141, 20, 32)
+}
+
+.java__darkblue {
+    color:rgb(6, 92, 120)
+}
+
+
+.python__lightyellow {
+    color: #d5c000
+}
+
+.python__lightblue {
+    color: rgb(6, 92, 120)
+}
+
+.vim__green {
+    color: rgb(6, 103, 6);
+}
+
 /* nav */
 
 nav {
@@ -286,7 +323,7 @@ header {
 .modal__languages--figure:hover .modal__language--image {
     filter: brightness(80%);
     opacity: 0.85;
-    transform: scale(90%);
+    transform: scale(70%);
 }
 
 .language__name {
