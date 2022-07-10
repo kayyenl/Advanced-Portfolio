@@ -254,7 +254,9 @@ header {
     background-color: rgb(245, 245, 245);
     display: flex;
     flex-direction: column;
-    padding: 40px 72px;
+    padding: 40px 54px;
+    display: flex;
+    justify-content: center;
 }
 
 .modal__contact {
@@ -263,28 +265,62 @@ header {
 
 .modal__languages {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .modal__languages--figure {
     width: 25%;
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
 }
 
 .modal__language--image {
-    width: 100%;
+    width: 70%;
+    transition: all 300ms ease;
 }
 
+.modal__languages--figure:hover .modal__language--image {
+    filter: brightness(80%);
+    opacity: 0.85;
+    transform: scale(90%);
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms ease;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+}
+
+
 .modal__aboutme--title {
-    
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .modal__aboutme--subtitle {
-
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 900;
 }
 
 .modal__aboutme--writeup {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 36px;
+    text-align: center;
 }
+
+
 
 
 /* projects section */
