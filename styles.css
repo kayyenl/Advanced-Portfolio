@@ -303,19 +303,20 @@ header {
 
 .modal__half {
     width: 50%;
+    padding: 40px 54px;
 }
 
 .modal__aboutme {
     background-color: rgb(245, 245, 245);
     display: flex;
     flex-direction: column;
-    padding: 40px 54px;
     display: flex;
     justify-content: center;
 }
 
 .modal__contact {
     background-color: #242424;
+    color: white;
 }
 
 .modal__languages {
