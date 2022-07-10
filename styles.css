@@ -478,12 +478,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
     background-color: #242424;
     font-size: 80px;
-    z-index: -1;
 }
 
 .modal__overlay--success {
@@ -494,6 +494,10 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
 }
 
 .modal__exit {
