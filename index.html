@@ -97,8 +97,8 @@
         
         <div class="modal">
             <div class="modal__half modal__aboutme">
-                <h3 class="modal__aboutme--title">Here's a bit about me.</h3>
-                <h4 class="modal__aboutme--subtitle"> <span class="theme__color">Frontend Software Engineer.</span></h4>
+                <h3 class="modal__aboutme--title modal__title">Here's a bit about me.</h3>
+                <h4 class="modal__aboutme--subtitle modal__subtitle"> <span class="theme__color">Frontend Software Engineer.</span></h4>
                 <p class="modal__aboutme--writeup">I'm a 23-year old <span class="theme__color bolder__words">Frontend Software Engineer</span> with a thirst for knowledge. 
                 <br> Having one major in <span class="theme__color bolder__words">Computer Science</span> and another in <span class="theme__color bolder__words">Traditional Engineering,</span> there is no technical skill that I cannot grasp!
                 <br> I enjoy working on difficult engineering problems, <span class="theme__color bolder__words">learning new skills and languages</span> that challenge the way I think.  </p>
@@ -151,8 +151,8 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
-                <h3 class="modal__contact--title">Let's have a chat!</h3>
-                <h3 class="modal__contact--subtitle">I'm currently open to new opportunities!</h3>
+                <h3 class="modal__contact--title modal__title">Let's have a chat!</h3>
+                <h3 class="modal__contact--subtitle modal__subtitle">I'm currently open to new opportunities!</h3>
                 <form action="" class="contact__form">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
@@ -160,12 +160,13 @@
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input type="text" class="input" name="user_email" required>
+                        <input type="email" class="input" name="user_email" required>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
-                        <input type="text" class="input" name="message" required>
+                        <textarea type="text" class="input" name="message" required></textarea>
                     </div>
+                    <button class="form__submit" id="contact__submit">Send it my way!</button>
                 </form>
             </div>
         </div>
