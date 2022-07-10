@@ -58,12 +58,13 @@ input, textarea {
     width: 100%;
     background-color: #242424;
     color: white;
-    outline-color: rgba(211, 211, 211, 0.5);
+    outline: none;
     border: 1px solid #c0c4cc;
     border-top: none;
     border-left: none;
     border-right: none;
     height: 40px;
+    transition: all 450ms ease;
 }
 
 textarea {
@@ -75,6 +76,16 @@ textarea {
 label {
     font-size: 14px;
     font-weight: bold;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #f06449;
 }
 
 .link__hover-effect {
@@ -425,8 +436,32 @@ header {
     text-align: center;
 }
 
+
 .form__item {
     margin-bottom: 20px;
+}
+
+.form__submit {
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 24px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover {
+    border-color: white;
+    background-color: transparent;
+}
+
+.form__submit:active {
+    border-color: #f06449;
+    color: #f06449;
 }
 
 
