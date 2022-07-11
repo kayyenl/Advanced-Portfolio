@@ -20,7 +20,7 @@ function contact(event) {
             loading.classList.remove("modal__overlay--visible")
             alert(
                 "This service is temporarily down. Please contact me diretly at e0543918@u.nus.edu."
-            )
+            );
         })
 }
 
