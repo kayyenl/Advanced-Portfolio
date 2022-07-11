@@ -3,6 +3,7 @@
 // template_w2pk8wr
 
 let isModalOpen = false;
+let isDarkMode = false;
 
 function contact(event) {
     event.preventDefault()
@@ -33,5 +34,11 @@ function toggleModal() {
 }
 
 function toggleContrast() {
-    document.body.classList += "dark-theme"
+    isDarkMode = !isDarkMode;
+    if (isDarkMode == false) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme");
+    }
 }
