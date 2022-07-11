@@ -4,8 +4,20 @@
 
 let isModalOpen = false;
 let isDarkMode = false;
+const scaleFactor = 1/20;
+const scaleFactorRotating = 10;
 
+function moveBackground(event) {
+    const shapes = document.querySelectorAll('.shapes');
+    const xcoord = event.clientX * scaleFactor;
+    const ycoord = event.clientY * scaleFactor;
 
+    for (let i = 0; i < shapes.length; i++) {
+        shapes[i].style.transform = `translate(${xcoord}px, ${ycoord}px)`;
+        shapes[i].style.transform = `rotate(${xcoord * scaleFactorRotating}deg)`;
+
+    }
+}
 
 function contact(event) {
     event.preventDefault()
