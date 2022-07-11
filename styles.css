@@ -342,7 +342,7 @@ header {
     display: flex;
     visibility: hidden;
     z-index: -1;
-    transition: visibility 1s, z-index 1s, box-shadow 1s ease;
+    transition: visibility 1s, z-index 1s, box-shadow 2000ms ease;
 }
 
 .modal-open .modal {
@@ -499,7 +499,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none !important;
     align-items: center;
     justify-content: center;
     z-index: -1;
@@ -522,6 +522,7 @@ header {
 
 .modal__overlay--visible {
     z-index: 1;
+    display: flex;
 }
 
 .modal__exit {
