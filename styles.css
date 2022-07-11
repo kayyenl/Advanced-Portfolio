@@ -92,6 +92,10 @@ textarea:focus {
     border-color: #f06449;
 }
 
+.modal-open .modal {
+
+}
+
 .link__hover-effect {
     position: relative;
 }
@@ -333,10 +337,26 @@ header {
     width: 90%;
     max-width: 1100px;
     height: 700px;
-    box-shadow: 0 20px 60px 0 rgba(0,0,0,0.55);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 1s ease;
+}
+
+.modal-open .modal {
+    z-index: 40;
+    box-shadow: 0 20px 60px 0 rgba(0,0,0,0.55);
+    visibility: visible;
+}
+
+.modal-open .modal__aboutme {
+    transform: translateX(0%);
+}
+
+.modal-open .modal__contact {
+    transform: translateX(0%);
 }
 
 .modal__half {
@@ -349,13 +369,17 @@ header {
 }
 
 .modal__aboutme {
+    transform: translateX(-100%);
     background-color: rgb(245, 245, 245);
     display: flex;
+    transition: all 1s ease-out;
 }
 
 .modal__contact {
+    transform: translateX(100%);
     background-color: #242424;
     color: white;
+    transition: all 1s ease-out;
 }
 
 .modal__languages {

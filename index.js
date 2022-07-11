@@ -24,6 +24,9 @@ function contact(event) {
         })
 }
 
+let isModalOpen = false;
 function toogleModal() {
-    
+    isModalOpen = !isModalOpen;
+    if (isModalOpen)  document.body.classList += " modal-open";
+    else document.body.classList.remove("modal-open");
 }
