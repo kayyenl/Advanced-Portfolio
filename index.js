@@ -2,6 +2,8 @@
 // service_xdfvfdj
 // template_w2pk8wr
 
+let isModalOpen = false;
+
 function contact(event) {
     event.preventDefault()
     const loading = document.querySelector('.modal__overlay--loading')
@@ -24,9 +26,12 @@ function contact(event) {
         })
 }
 
-let isModalOpen = false;
-function toogleModal() {
+function toggleModal() {
     isModalOpen = !isModalOpen;
     if (isModalOpen)  document.body.classList += " modal-open";
     else document.body.classList.remove("modal-open");
+}
+
+function toggleContrast() {
+    document.body.classList += "dark-theme"
 }

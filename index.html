@@ -28,24 +28,25 @@
             </figure>
             <ul class="nav__link--list">
                 <li class="nav__link">
-                    <a href="#" class=
+                    <a href="#" onclick="toggleModal()"
+                    class=
                     "nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class=
+                    <a href="#projects" class=
                     "nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class=
                     "nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black">Contact</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleContrast()">
                     <a href="#" class=
                     "nav__link--anchor
                     link__hover-effect
@@ -59,10 +60,10 @@
                 <h1 class="title ">Hey </h1>
                 <h1 class="title theme__color">I'm Kay Yen.</h1>
                 <p class="header__para">
-                    I'm a <b class="theme__color">Frontend Software Engineer</b> who is looking to make the next great user experience. 
+                    I'm a <b class="theme__color cursor__pointer" onclick="toggleModal()">Frontend Software Engineer</b> who is looking to make the next great user experience. 
                     Always willing to learn, and take up new challenges.
                     <br>
-                    Here's more <b class="theme__color">about me.</b>
+                    Here's more <b class="theme__color cursor__pointer" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     
@@ -96,7 +97,7 @@
     
         </header>
         
-        <button class="mail__btn click-size" onclick="toogleModal()">
+        <button class="mail__btn click-size" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         
@@ -181,7 +182,7 @@
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">Received! <br> Looking forward to speaking to you.</div>
-                <i class="fas fa-times modal__exit click-size"></i>
+                <i class="fas fa-times modal__exit click-size" onclick="toggleModal()"></i>
             </div>
         </div>
 

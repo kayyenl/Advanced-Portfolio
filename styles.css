@@ -58,6 +58,22 @@ li {
     list-style: none;
 }
 
+nav, 
+header,
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 500ms ease;
+}
+
+.modal-open nav, 
+.modal-open header,
+.modal-open .scroll {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 600ms ease;
+}
+
 input, textarea {
     width: 100%;
     background-color: #242424;
@@ -92,8 +108,8 @@ textarea:focus {
     border-color: #f06449;
 }
 
-.modal-open .modal {
-
+.cursor__pointer {
+    cursor: pointer;
 }
 
 .link__hover-effect {
@@ -342,7 +358,7 @@ header {
     display: flex;
     visibility: hidden;
     z-index: -1;
-    transition: visibility 1s, z-index 1s, box-shadow 2000ms ease;
+    transition: visibility 600ms, z-index 600ms, box-shadow 600ms ease;
 }
 
 .modal-open .modal {
@@ -369,17 +385,17 @@ header {
 }
 
 .modal__aboutme {
-    transform: translateX(-100%);
+    transform: translateX(-140%);
     background-color: rgb(245, 245, 245);
     display: flex;
-    transition: all 1s ease-out;
+    transition: all 1s ease;
 }
 
 .modal__contact {
-    transform: translateX(100%);
+    transform: translateX(140%);
     background-color: #242424;
     color: white;
-    transition: all 1s ease-out;
+    transition: all 1s ease;
 }
 
 .modal__languages {
