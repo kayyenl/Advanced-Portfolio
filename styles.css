@@ -782,6 +782,7 @@ row widths: 5, 50, 80vw
 /* responsive settings */
 
 @media (max-width: 768px) {
+
     .title {
         font-size: 72px;
     }
@@ -826,12 +827,24 @@ row widths: 5, 50, 80vw
         font-size: 12px;
         text-align: center;
     }
+
+    .shapes {
+        opacity: 0.5;
+    }
+
+    .row {
+        padding: 0 36px;
+    }
 } 
 
 @media (max-width: 640px) {
 
     .title {
         font-size: 48px;
+    }
+
+    .section__title {
+        font-size: 42px;
     }
 
     .header__para {
@@ -863,7 +876,11 @@ row widths: 5, 50, 80vw
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
+
+    .section__title {
+        font-size: 32px;
+    }
 
     .project__description--para {
         display: none;
@@ -874,4 +891,10 @@ row widths: 5, 50, 80vw
         display: flex;
         padding-bottom: 4px;
     }
+
+    .nav__link:first-child,
+    .nav__link:nth-child(2) {
+        display: none;
+    }
+
 }
