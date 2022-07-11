@@ -873,6 +873,18 @@ row widths: 5, 50, 80vw
     .project__description--link {
         margin: 0 auto;
     }
+
+    .shapes {
+        opacity: 0.3;
+    }
+
+    .modal__half {
+        padding: 40px 32px;
+    }
+
+    .modal__exit {
+        font-size: 24px;
+    }
 }
 
 
@@ -881,6 +893,16 @@ row widths: 5, 50, 80vw
     .section__title {
         font-size: 32px;
     }
+
+    .modal__contact--title {
+        text-align: left;
+        width: 90%;
+    }
+
+    .modal__contact--subtitle {
+        text-align: left;
+    }
+
 
     .project__description--para {
         display: none;
