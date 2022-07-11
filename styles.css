@@ -733,7 +733,7 @@ row widths: 5, 50, 80vw
 
 .shape0 {
     top: 15vh;
-    left: 5vw;
+    left: 10vw;
 }
 
 .shape1 {
@@ -748,7 +748,7 @@ row widths: 5, 50, 80vw
 
 .shape3 {
     top: 50vh;
-    left: 5vw;
+    left: 15vw;
 }
 
 .shape4 {
@@ -758,12 +758,12 @@ row widths: 5, 50, 80vw
 
 .shape5 {
     top: 50vh;
-    left: 80vw;
+    left: 85vw;
 }
 
 .shape6 {
     top: 83vh;
-    left: 5vw;
+    left: 10vw;
 }
 
 .shape7 {

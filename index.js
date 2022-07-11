@@ -13,9 +13,12 @@ function moveBackground(event) {
     const ycoord = event.clientY * scaleFactor;
 
     for (let i = 0; i < shapes.length; i++) {
-        shapes[i].style.transform = `translate(${xcoord}px, ${ycoord}px)`;
-        shapes[i].style.transform = `rotate(${xcoord * scaleFactorRotating}deg)`;
-
+        if (i % 2 === 1) {
+            shapes[i].style.transform = `translate(${-xcoord}px, ${-ycoord}px) rotate(${-(xcoord * scaleFactorRotating)}deg)`;
+        }
+        else {
+            shapes[i].style.transform = `translate(${xcoord}px, ${ycoord}px) rotate(${xcoord * scaleFactorRotating}deg)`;
+        }
     }
 }
 
