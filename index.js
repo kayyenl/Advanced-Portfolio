@@ -23,3 +23,7 @@ function contact(event) {
             )
         })
 }
+
+function toogleModal() {
+    
+}
