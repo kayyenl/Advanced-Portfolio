@@ -720,4 +720,61 @@ footer {
     text-decoration: none;
 }
 
+/* 
+shapes background 
+
+row heights: 35, 70 and 95vh
+row widths: 5, 50, 80vw
+*/
+
+.shapes {
+    position: fixed;
+}
+
+.shape0 {
+    top: 15vh;
+    left: 5vw;
+}
+
+.shape1 {
+    top: 15vh;
+    left: 50vw;
+}
+
+.shape2 {
+    top: 15vh;
+    left: 80vw;
+}
+
+.shape3 {
+    top: 50vh;
+    left: 5vw;
+}
+
+.shape4 {
+    top: 50vh;
+    left: 50vw;
+}
+
+.shape5 {
+    top: 50vh;
+    left: 80vw;
+}
+
+.shape6 {
+    top: 80vh;
+    left: 5vw;
+}
+
+.shape7 {
+    top: 80vh;
+    left: 50vw;
+}
+
+.shape8 {
+    top: 80vh;
+    left: 80vw;
+}
+
+
 

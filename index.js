@@ -5,6 +5,8 @@
 let isModalOpen = false;
 let isDarkMode = false;
 
+
+
 function contact(event) {
     event.preventDefault()
     const loading = document.querySelector('.modal__overlay--loading')
